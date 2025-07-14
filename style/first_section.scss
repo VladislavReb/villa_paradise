@@ -1,0 +1,24 @@
+.first_section {
+  padding: 20px 0 40px 0;
+  background-color: $main_color;
+
+  .fs_1 {
+    position: relative;
+
+    img {
+      max-width: 100%;
+    }
+
+    .fs_1__title {
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 32px;
+      padding: 15px;
+      position: absolute;
+      bottom: 145px;
+      left: 0;
+      color: white;
+      max-width: 50%;
+
+    }
+  }
+}

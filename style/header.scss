@@ -1,0 +1,35 @@
+header {
+  background-color: $main_color;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+    border-bottom: 2px solid black;
+
+    div > img {
+      max-width: 50px;
+    }
+
+    h1 {
+      font-weight: 400;
+      font-size: 32px;
+      padding: 0 5px;
+      border: 2px solid black;
+      max-width: 100%;
+    }
+
+    a {
+      text-align: right;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    & > * {
+      min-width: 200px;
+    }
+  }
+}

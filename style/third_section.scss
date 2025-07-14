@@ -1,0 +1,68 @@
+.third_section {
+  padding: 40px 0 20px 0;
+  background-color: $main_color;
+
+  .container {
+    .ts_container {
+      .fade {
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-prev {
+  left: 20px;
+}
+
+.slick-next {
+  right: 20px;
+}
+
+/* Можно добавить стрелочки с помощью псевдоэлементов */
+.slick-prev::before,
+.slick-next::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-style: solid;
+}
+
+.slick-prev::before {
+  border-width: 8px 12px 8px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.slick-next::before {
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent white;
+}
+
+.slick-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Или полностью скрыть неактивные */
+.slick-disabled {
+  display: none;
+}

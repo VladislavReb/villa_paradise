@@ -1,0 +1,48 @@
+.sixth_section {
+  padding: 40px 0;
+
+  .container {
+
+    .sis_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .sis_p1 {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        h5 {
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 15px;
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+
+          img {
+            max-width: 25px;
+          }
+
+          a {
+            color: black;
+          }
+        }
+      }
+
+      .sis_p2 {
+
+        img {
+          position: relative;
+          max-width: 700px;
+          mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+          -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.fourth_section {
+  padding: 40px 0 20px 0;
+}
+.fourth_section .container .fs_container {
+  display: flex;
+  flex-direction: column;
+}
+.fourth_section .container .fs_container .fs_title {
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.fourth_section .container .fs_container .fs_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.fourth_section .container .fs_container .fs_content_p1 {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fourth_section .container .fs_container .fs_content_p1 .fs_info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.fourth_section .container .fs_container .fs_content_p1 .fs_info img {
+  max-width: 23px;
+}
+.fourth_section .container .fs_container .fs_content_p1 .fs_info p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.fourth_section .container .fs_container .fs_content .fs_content_p2 img {
+  max-width: 550px;
+}
+.fourth_section .container .fs_container .fs_content_reverse {
+  flex-direction: row-reverse;
+}
+
+/*# sourceMappingURL=fourth_section.css.map */
