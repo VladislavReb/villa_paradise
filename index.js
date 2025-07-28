@@ -12,3 +12,4 @@ $(document).ready(function(){
         nextArrow: '<button type="button" class="slick-next"></button>',
     });
 });
+

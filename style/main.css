@@ -226,6 +226,9 @@ header .header > * {
   font-size: 18px;
   font-weight: bold;
 }
+.fourth_section .container .fs_container .fs_content_p1 .fs_info_p span {
+  font-weight: bold;
+}
 .fourth_section .container .fs_container .fs_content_p1 .line {
   margin: 3px 0;
   width: 350px;
@@ -261,7 +264,7 @@ header .header > * {
 .fifth_section .container .fis_container p {
   text-align: center;
 }
-.fifth_section .container .fis_container a {
+.fifth_section .container .fis_container .modal__form__button2 {
   font-size: 23px;
   font-weight: bold;
   border: white solid 3px;
@@ -277,7 +280,7 @@ header .header > * {
   -webkit-text-fill-color: transparent;
   animation: gradientMove 5s ease-in-out infinite;
 }
-.fifth_section .container .fis_container a:hover {
+.fifth_section .container .fis_container .modal__form__button2:hover {
   transform: scale(1.1);
 }
 @keyframes gradientMove {
@@ -290,6 +293,173 @@ header .header > * {
   100% {
     background-position: 0% 50%;
   }
+}
+.fifth_section .container .fis_container .modal__background {
+  z-index: 1;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+.fifth_section .container .fis_container .modal {
+  display: flex !important;
+  gap: 25px;
+  display: none;
+  margin: 0 auto;
+  width: 850px;
+  background-color: #cef2ff;
+  border-radius: 20px;
+  border: 2px solid black;
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: default;
+  z-index: 1;
+  filter: none;
+}
+.fifth_section .container .fis_container .modal .modal1 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fifth_section .container .fis_container .modal .modal1_title {
+  font-size: 21px;
+  font-weight: 600;
+  text-align: start;
+  padding-bottom: 15px;
+}
+.fifth_section .container .fis_container .modal .modal1 iframe {
+  border-radius: 10px;
+  height: 448px;
+  width: 350px;
+}
+.fifth_section .container .fis_container .modal .modal2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fifth_section .container .fis_container .modal .modal2__info {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 15px;
+}
+.fifth_section .container .fis_container .modal .modal2__info > a > img {
+  max-width: 20px;
+  max-height: 20px;
+  cursor: pointer;
+}
+.fifth_section .container .fis_container .modal .modal2__info > a > img:hover {
+  transform: scale(1.1);
+}
+.fifth_section .container .fis_container .modal .modal2__title {
+  font-size: 21px;
+  font-weight: 600;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form .modal2__input {
+  min-width: 100%;
+  min-height: 46px;
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form .modal2__input:focus {
+  border: 1px solid black;
+  outline: 0;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form .modal2__input:disabled {
+  background: #EDEDF7;
+  border: 1px solid #EDEDF7;
+  border-radius: 8px;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form .modal2__input::placeholder {
+  padding: 0 15px 15px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #65656b;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form__message {
+  min-width: 100%;
+  min-height: 46px;
+  padding: 10px;
+  border: 1px solid #FFFFFF;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  min-height: 80px;
+  resize: none;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form__message:focus {
+  border: 1px solid black;
+  outline: 0;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form__message:disabled {
+  background: #EDEDF7;
+  border: 1px solid #EDEDF7;
+  border-radius: 8px;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form__message::placeholder {
+  padding: 0 15px 15px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  color: #65656b;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form .checkbox__wrapper {
+  display: flex;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form .checkbox__wrapper .check_box_text {
+  font-size: 14px;
+  font-weight: bold;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form__checkbox {
+  margin-right: 10px;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form .modal2__call {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form__par {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form__button3 {
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border: white solid 3px;
+  border-radius: 10px;
+  padding: 5px;
+  transition: background-color 0.3s ease;
+  background-color: black;
+  color: transparent;
+  background-image: linear-gradient(270deg, #2a42a5, #FFD700, #2a42a5);
+  background-size: 300% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 5s ease-in-out infinite;
+}
+.fifth_section .container .fis_container .modal .modal2 .modal2__form__button3:disabled {
+  background-color: #828282;
 }
 
 .sixth_section {
@@ -322,7 +492,6 @@ header .header > * {
   color: black;
 }
 .sixth_section .container .sis_container .sis_p2 img {
-  position: relative;
   max-width: 700px;
   mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
