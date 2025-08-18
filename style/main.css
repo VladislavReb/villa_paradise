@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rowdies:wght@300;400;700&display=swap");
+/*$main_color: #cef2ff;*/
 * {
   padding: 0;
   margin: 0;
@@ -27,7 +28,7 @@ a {
 }
 
 header {
-  background-color: #cef2ff;
+  background-color: #e9e4da;
 }
 header .header {
   display: flex;
@@ -58,13 +59,14 @@ header .header > * {
 
 .first_section {
   padding: 20px 0 40px 0;
-  background-color: #cef2ff;
+  background-color: #e9e4da;
 }
 .first_section .fs_1 {
   position: relative;
 }
 .first_section .fs_1 img {
   max-width: 100%;
+  object-fit: cover;
 }
 .first_section .fs_1 .fs_1__title {
   background-color: rgba(0, 0, 0, 0.8);
@@ -126,7 +128,7 @@ header .header > * {
 
 .third_section {
   padding: 40px 0 20px 0;
-  background-color: #cef2ff;
+  background-color: #e9e4da;
 }
 .third_section .container .ts_container .fade img {
   width: 100%;
@@ -209,7 +211,7 @@ header .header > * {
   margin-bottom: 20px;
 }
 .fourth_section .container .fs_container .fs_content_p1 {
-  max-width: 450px;
+  max-width: 550px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -220,7 +222,7 @@ header .header > * {
   gap: 5px;
 }
 .fourth_section .container .fs_container .fs_content_p1 .fs_info img {
-  max-width: 23px;
+  max-width: 15px;
 }
 .fourth_section .container .fs_container .fs_content_p1 .fs_info p {
   font-size: 18px;
@@ -233,13 +235,13 @@ header .header > * {
   margin: 3px 0;
   width: 350px;
   height: 3px;
-  background-color: #cef2ff;
+  background-color: #e9e4da;
 }
 .fourth_section .container .fs_container .fs_content_p1 .short_line {
   margin: 3px 0;
   width: 250px;
   height: 3px;
-  background-color: #cef2ff;
+  background-color: #e9e4da;
 }
 .fourth_section .container .fs_container .fs_content .fs_content_p2 img {
   max-width: 550px;
@@ -252,7 +254,7 @@ header .header > * {
 
 .fifth_section {
   padding: 40px 0;
-  background-color: #cef2ff;
+  background-color: #e9e4da;
 }
 .fifth_section .container .fis_container {
   display: flex;
@@ -312,7 +314,7 @@ header .header > * {
   display: none;
   margin: 0 auto;
   width: 850px;
-  background-color: #cef2ff;
+  background-color: #e9e4da;
   border-radius: 20px;
   border: 2px solid black;
   padding: 30px;
@@ -499,7 +501,7 @@ header .header > * {
 
 footer {
   padding: 20px 0;
-  background-color: #cef2ff;
+  background-color: #e9e4da;
 }
 footer .container .footer_container {
   display: flex;
