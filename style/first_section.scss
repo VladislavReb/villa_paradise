@@ -18,7 +18,32 @@
       left: 0;
       color: white;
       max-width: 50%;
+    }
+  }
+}
 
+@media screen and (min-width: 1920px) {
+  .first_section {
+    .fs_1 {
+      .fs_1__title {
+        font-size: 42px;
+        padding: 15px;
+        position: absolute;
+        bottom: 165px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1364px) {
+  .first_section {
+    .fs_1 {
+      .fs_1__title {
+        font-size: 34px;
+        padding: 15px;
+        position: absolute;
+        bottom: 105px;
+      }
     }
   }
 }

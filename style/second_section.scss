@@ -51,7 +51,32 @@
           max-width: 350px;
           box-shadow: 0 8px 20px rgb(28, 25, 25);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+      }
+    }
+  }
+}
 
+@media screen and (min-width: 1024px) and (max-width: 1364px) {
+  .second_section {
+
+    .container {
+
+      .ss_2 {
+        min-height: 550px;
+
+        .ss_2__part1 {
+
+          img {
+            max-width: 300px;
+          }
+        }
+
+        .ss_2__part3 {
+
+          img {
+            max-width: 300px;
+          }
         }
       }
     }
