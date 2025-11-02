@@ -53,14 +53,18 @@
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .first_section {
-    overflow: hidden !important;
+
     .fs_1 {
+      width: 100%;
       overflow: hidden !important;
 
       img {
-        max-width: 170%;
+        display: block;
+        width: 100%;
+        max-width: none;
         object-position: center;
         transform: translateX(-22%);
+        object-fit: cover;
       }
 
       .fs_1__title {
