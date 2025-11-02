@@ -190,12 +190,21 @@
 
         .fs_title {
           margin-bottom: 20px;
+          font-size: 22px;
         }
 
         .fs_content {
           flex-direction: column;
+
           &_p1 {
             max-width: 750px;
+
+            .fs_info {
+
+              p {
+                font-size: 22px;
+              }
+            }
           }
 
           .fs_content_p2{
