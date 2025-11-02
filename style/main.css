@@ -160,9 +160,14 @@ header .header > * {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .first_section {
+    overflow: hidden !important;
+  }
+  .first_section .fs_1 {
+    overflow: hidden !important;
+  }
   .first_section .fs_1 img {
     max-width: 170%;
-    object-fit: cover;
     object-position: center;
     transform: translateX(-22%);
   }
