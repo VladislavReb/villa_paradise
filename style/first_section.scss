@@ -56,11 +56,11 @@
 
     .fs_1 {
       width: 100%;
-      overflow: hidden !important;
+      overflow: hidden;
 
       img {
         display: block;
-        width: 100%;
+        width: 180%;
         max-width: none;
         object-position: center;
         transform: translateX(-22%);
