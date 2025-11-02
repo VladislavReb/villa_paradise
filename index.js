@@ -10,6 +10,20 @@ $(document).ready(function(){
         arrows: true,
         prevArrow: '<button type="button" class="slick-prev"></button>',
         nextArrow: '<button type="button" class="slick-next"></button>',
+        responsive: [
+            {
+                breakpoint: 1024, // 👈 при ширине окна меньше 992px
+                settings: {
+                    slidesToShow: 2 // например, планшет
+                }
+            },
+            {
+                breakpoint: 768, // 👈 при ширине окна меньше 768px
+                settings: {
+                    slidesToShow: 1 // мобильная версия — 1 слайд
+                }
+            }
+        ]
     });
 });
 

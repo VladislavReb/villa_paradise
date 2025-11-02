@@ -114,6 +114,11 @@ header .header > * {
   min-width: 200px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  header .header h1 {
+    font-size: 30px;
+  }
+}
 .first_section {
   padding: 20px 0 40px 0;
   background-color: #e9e4da;
@@ -152,6 +157,19 @@ header .header > * {
     padding: 15px;
     position: absolute;
     bottom: 105px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .first_section .fs_1 img {
+    max-width: 170%;
+    object-fit: cover;
+    object-position: center;
+    transform: translateX(-22%);
+  }
+  .first_section .fs_1 .fs_1__title {
+    font-size: 39px;
+    bottom: 75px;
+    max-width: 70%;
   }
 }
 .second_section {
@@ -210,6 +228,14 @@ header .header > * {
   }
   .second_section .container .ss_2 .ss_2__part3 img {
     max-width: 300px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .second_section .container .ss_2 {
+    min-height: 0;
+  }
+  .second_section .container .ss_2 .ss_2__part1 {
+    display: none;
   }
 }
 .third_section {
@@ -396,6 +422,26 @@ header .header > * {
   }
   .fourth_section .container .fs_container .fs_content_reverse {
     flex-direction: row-reverse;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fourth_section .container .fs_container {
+    gap: 25px;
+  }
+  .fourth_section .container .fs_container .fs_title {
+    margin-bottom: 20px;
+  }
+  .fourth_section .container .fs_container .fs_content {
+    flex-direction: column;
+  }
+  .fourth_section .container .fs_container .fs_content_p1 {
+    max-width: 750px;
+  }
+  .fourth_section .container .fs_container .fs_content .fs_content_p2 img {
+    max-width: 700px;
+  }
+  .fourth_section .container .fs_container .fs_content_reverse {
+    flex-direction: column;
   }
 }
 .fifth_section {
@@ -645,6 +691,11 @@ header .header > * {
   -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .sixth_section .container .sis_container .sis_p2 img {
+    max-width: 550px;
+  }
+}
 footer {
   padding: 20px 0;
   background-color: #e9e4da;
