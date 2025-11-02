@@ -109,11 +109,26 @@ a {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     * {
-        font-size: 22px;
+        font-size: 16px;
     }
 
     .container {
         max-width: 750px;
+    }
+
+
+    @mixin input_decor {
+        width: 70%;
+        min-height: 26px;
+        line-height: 20px;
+    }
+
+    @mixin input_placeholder_decor {
+        padding: 0 15px 15px 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 26px;
+        color: #65656b;
     }
 }
 
