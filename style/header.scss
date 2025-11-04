@@ -19,6 +19,7 @@ header {
       font-size: 38px;
       padding: 0 15px;
       border: 1px solid black;
+      display: flex;
     }
 
     a {
@@ -44,6 +45,44 @@ header {
         font-size: 30px;
         max-width: 150px;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 595px) and (max-width: 767px) {
+  header {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      div {
+        width: 70px;
+        flex-shrink: 0; // логотип не сжимается
+      }
+
+      h1 {
+        flex: 1 1 auto;     // растягивается, но сжимается при нехватке места
+        text-align: center;
+        font-size: 26px;
+        padding: 0 5px;
+        margin: 0;
+        width: auto;        // убираем фиксированную ширину!
+        min-width: 100px;   // можно задать минимум, если нужно
+      }
+
+      a {
+        flex-shrink: 0;     // не сжимается
+        text-align: right;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    & > * {
+      min-width: unset;
     }
   }
 }

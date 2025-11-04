@@ -63,3 +63,28 @@
     }
   }
 }
+
+@media screen and (min-width: 595px) and (max-width: 767px) {
+  .sixth_section {
+
+    .container {
+
+      .sis_container {
+
+        .sis_p1 {
+
+          h5 {
+            font-size: 18px;
+          }
+        }
+
+        .sis_p2 {
+
+          img {
+            max-width: 550px;
+          }
+        }
+      }
+    }
+  }
+}

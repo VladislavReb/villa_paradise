@@ -109,3 +109,37 @@
     }
   }
 }
+
+@media screen and (min-width: 595px) and (max-width: 767px) {
+  .second_section {
+
+    .container {
+
+      .ss_2 {
+        min-height: 0;
+
+        .ss_2__part1 {
+          display: none;
+        }
+
+        .ss_2__part2 {
+          gap: 5px;
+
+          h3 {
+            font-size: 18px;
+          }
+        }
+
+        .ss_2__part3 {
+          align-self: center;
+
+          img {
+            max-width: 300px;
+            box-shadow: 0 8px 20px rgb(28, 25, 25);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
