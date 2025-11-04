@@ -100,3 +100,28 @@
     }
   }
 }
+
+@media screen and (min-width: 412px) and (max-width: 594px) {
+  .first_section {
+
+    .fs_1 {
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 190%;
+        max-width: none;
+        object-position: center;
+        transform: translateX(-25%);
+        object-fit: cover;
+      }
+
+      .fs_1__title {
+        font-size: 23px;
+        bottom: 65px;
+        max-width: 80%;
+      }
+    }
+  }
+}

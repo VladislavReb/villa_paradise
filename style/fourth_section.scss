@@ -230,7 +230,7 @@
         gap: 25px;
 
         .fs_title {
-          margin-bottom: 20px;
+          margin-bottom: 10px;
           font-size: 20px;
         }
 
@@ -252,6 +252,47 @@
 
             img {
               max-width: 500px;
+            }
+          }
+        }
+
+        .fs_content_reverse {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 412px) and (max-width: 594px) {
+  .fourth_section{
+    .container {
+      .fs_container{
+        gap: 25px;
+
+        .fs_title {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+
+        .fs_content {
+          flex-direction: column;
+
+          &_p1 {
+            max-width: 595px;
+
+            .fs_info {
+
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .fs_content_p2{
+
+            img {
+              max-width: 370px;
             }
           }
         }

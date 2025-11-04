@@ -20,7 +20,8 @@ $(document).ready(function(){
             {
                 breakpoint: 768, // 👈 при ширине окна меньше 768px
                 settings: {
-                    slidesToShow: 1 // мобильная версия — 1 слайд
+                    slidesToShow: 1, // мобильная версия — 1 слайд
+                    dots: false
                 }
             }
         ]
