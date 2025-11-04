@@ -890,6 +890,9 @@ header .header > * {
     max-width: 590px;
     display: flex;
     flex-direction: column-reverse;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 15px;
     display: none;
     margin: 0 auto;
     width: 850px;
@@ -926,10 +929,13 @@ header .header > * {
 }
 @media screen and (min-width: 412px) and (max-width: 594px) {
   .fifth_section .container .fis_container .modal {
-    overflow: scroll !important;
     max-width: 410px;
+    max-height: 90vh;
     display: flex;
     flex-direction: column-reverse;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 15px;
     display: none;
     margin: 0 auto;
     width: 850px;

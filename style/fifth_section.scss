@@ -233,6 +233,9 @@
           max-width: 590px;
           display: flex;
           flex-direction: column-reverse;
+          overflow-y: auto; // 👈 включаем вертикальный скролл
+          -webkit-overflow-scrolling: touch; // 👈 обязательно для iOS
+          padding: 15px; // немного внутреннего отступа, чтобы не прилипало
           @include modal;
 
           .modal1 {
@@ -273,10 +276,13 @@
 
 
         .modal {
-          overflow: scroll !important;
           max-width: 410px;
+          max-height: 90vh;
           display: flex;
           flex-direction: column-reverse;
+          overflow-y: auto; // 👈 включаем вертикальный скролл
+          -webkit-overflow-scrolling: touch; // 👈 обязательно для iOS
+          padding: 15px; // немного внутреннего отступа, чтобы не прилипало
           @include modal;
 
           .modal1 {
