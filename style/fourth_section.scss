@@ -279,7 +279,7 @@
           flex-direction: column;
 
           &_p1 {
-            max-width: 595px;
+            max-width: 412px;
 
             .fs_info {
 
@@ -293,6 +293,47 @@
 
             img {
               max-width: 370px;
+            }
+          }
+        }
+
+        .fs_content_reverse {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 411px) {
+  .fourth_section{
+    .container {
+      .fs_container{
+        gap: 25px;
+
+        .fs_title {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+
+        .fs_content {
+          flex-direction: column;
+
+          &_p1 {
+            max-width: 380px;
+
+            .fs_info {
+
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .fs_content_p2{
+
+            img {
+              max-width: 330px;
             }
           }
         }

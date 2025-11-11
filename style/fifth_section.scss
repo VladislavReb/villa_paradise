@@ -226,11 +226,11 @@
     .container {
 
       .fis_container {
-
+        padding: 15px 10px;
 
         .modal {
-          overflow: scroll;
           max-width: 590px;
+          max-height: 90vh;
           display: flex;
           flex-direction: column-reverse;
           overflow-y: auto; // 👈 включаем вертикальный скролл
@@ -273,7 +273,7 @@
     .container {
 
       .fis_container {
-
+        padding: 15px 10px;
 
         .modal {
           max-width: 410px;
@@ -300,6 +300,53 @@
 
           .modal2 {
             max-width: 410px;
+            display: flex;
+            flex-direction: column;
+
+
+            .modal2__form {
+              flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 380px) and (max-width: 411px) {
+  .fifth_section {
+
+    .container {
+
+      .fis_container {
+        padding: 15px 10px;
+
+        .modal {
+          max-width: 375px;
+          max-height: 90vh;
+          display: flex;
+          flex-direction: column-reverse;
+          overflow-y: auto; // 👈 включаем вертикальный скролл
+          -webkit-overflow-scrolling: touch; // 👈 обязательно для iOS
+          padding: 15px; // немного внутреннего отступа, чтобы не прилипало
+          @include modal;
+
+          .modal1 {
+            flex-direction: column;
+
+            &_title {
+              font-size: 20px;
+            }
+
+            iframe {
+              height: 250px;
+              width: 100%;
+            }
+          }
+
+          .modal2 {
+            max-width: 375px;
             display: flex;
             flex-direction: column;
 
