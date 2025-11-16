@@ -852,6 +852,7 @@ header .header > * {
 .fifth_section .container .fis_container .modal .modal2__info {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 15px;
 }
 .fifth_section .container .fis_container .modal .modal2__info > a > img {
@@ -967,11 +968,17 @@ header .header > * {
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .fifth_section .container .fis_container .modal__background {
+    align-items: flex-start !important;
+    padding-top: 10px;
+  }
   .fifth_section .container .fis_container .modal {
-    overflow: scroll;
     max-width: 650px;
+    max-height: 90vh;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     display: none;
     margin: 0 auto;
     width: 850px;
@@ -988,16 +995,19 @@ header .header > * {
     filter: none;
   }
   .fifth_section .container .fis_container .modal .modal1 {
+    order: 2;
     flex-direction: column;
   }
   .fifth_section .container .fis_container .modal .modal1_title {
     font-size: 20px;
+    text-align: center;
   }
   .fifth_section .container .fis_container .modal .modal1 iframe {
     height: 300px;
     width: 100%;
   }
   .fifth_section .container .fis_container .modal .modal2 {
+    order: 1;
     max-width: 650px;
     display: flex;
     flex-direction: column;
@@ -1014,7 +1024,7 @@ header .header > * {
     max-width: 590px;
     max-height: 90vh;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding: 15px;
@@ -1034,16 +1044,19 @@ header .header > * {
     filter: none;
   }
   .fifth_section .container .fis_container .modal .modal1 {
+    order: 2;
     flex-direction: column;
   }
   .fifth_section .container .fis_container .modal .modal1_title {
     font-size: 20px;
+    text-align: center;
   }
   .fifth_section .container .fis_container .modal .modal1 iframe {
     height: 300px;
     width: 100%;
   }
   .fifth_section .container .fis_container .modal .modal2 {
+    order: 1;
     max-width: 590px;
     display: flex;
     flex-direction: column;
@@ -1060,7 +1073,7 @@ header .header > * {
     max-width: 410px;
     max-height: 90vh;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding: 15px;
@@ -1080,16 +1093,19 @@ header .header > * {
     filter: none;
   }
   .fifth_section .container .fis_container .modal .modal1 {
+    order: 2;
     flex-direction: column;
   }
   .fifth_section .container .fis_container .modal .modal1_title {
     font-size: 20px;
+    text-align: center;
   }
   .fifth_section .container .fis_container .modal .modal1 iframe {
     height: 250px;
     width: 100%;
   }
   .fifth_section .container .fis_container .modal .modal2 {
+    order: 1;
     max-width: 410px;
     display: flex;
     flex-direction: column;
@@ -1106,7 +1122,7 @@ header .header > * {
     max-width: 375px;
     max-height: 90vh;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     padding: 15px;
@@ -1126,17 +1142,69 @@ header .header > * {
     filter: none;
   }
   .fifth_section .container .fis_container .modal .modal1 {
+    order: 2;
     flex-direction: column;
   }
   .fifth_section .container .fis_container .modal .modal1_title {
     font-size: 20px;
+    text-align: center;
   }
   .fifth_section .container .fis_container .modal .modal1 iframe {
     height: 250px;
     width: 100%;
   }
   .fifth_section .container .fis_container .modal .modal2 {
+    order: 1;
     max-width: 375px;
+    display: flex;
+    flex-direction: column;
+  }
+  .fifth_section .container .fis_container .modal .modal2 .modal2__form {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 379px) {
+  .fifth_section .container .fis_container {
+    padding: 10px 5px;
+  }
+  .fifth_section .container .fis_container .modal {
+    max-width: 315px;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 12px !important;
+    display: none;
+    margin: 0 auto;
+    width: 850px;
+    background-color: #e9e4da;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: default;
+    z-index: 1;
+    filter: none;
+  }
+  .fifth_section .container .fis_container .modal .modal1 {
+    order: 2;
+    flex-direction: column;
+  }
+  .fifth_section .container .fis_container .modal .modal1_title {
+    font-size: 18px;
+    text-align: center;
+  }
+  .fifth_section .container .fis_container .modal .modal1 iframe {
+    height: 260px;
+    width: 100%;
+  }
+  .fifth_section .container .fis_container .modal .modal2 {
+    order: 1;
+    max-width: 315px;
     display: flex;
     flex-direction: column;
   }
