@@ -345,3 +345,44 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 379px) {
+  .fourth_section{
+    .container {
+      .fs_container{
+        gap: 25px;
+
+        .fs_title {
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+
+        .fs_content {
+          flex-direction: column;
+
+          &_p1 {
+            max-width: 310px;
+
+            .fs_info {
+
+              p {
+                font-size: 16px;
+              }
+            }
+          }
+
+          .fs_content_p2{
+
+            img {
+              max-width: 280px;
+            }
+          }
+        }
+
+        .fs_content_reverse {
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
