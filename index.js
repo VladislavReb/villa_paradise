@@ -28,3 +28,11 @@ $(document).ready(function(){
     });
 });
 
+// Найдём ссылку внутри label
+const privacyLink = document.querySelector('#myLabel a');
+
+// Останавливаем всплытие клика, чтобы не трогался чекбокс
+privacyLink.addEventListener('click', function(event) {
+    event.stopPropagation(); // предотвращает переключение чекбокса
+    // ссылка всё равно откроется
+});
