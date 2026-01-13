@@ -46,9 +46,9 @@ function checkCheckboxStatus() {
 }*/
 
 // Impressum modal window.
-const modalCall = document.getElementsByClassName("modal2__call")[0];
+const modalCall = document.getElementsByClassName("modal__call")[0];
 const impressumBackground = document.getElementsByClassName("impressum__background")[0];
-const impressumModal = document.getElementsByClassName("modal2_impressum")[0];
+const impressumModal = document.getElementsByClassName("modal_impressum")[0];
 const impressumActive = document.getElementsByClassName("impressum_link")[0];
 const impressumClose = document.getElementsByClassName("impressum_cross")[0];
 
